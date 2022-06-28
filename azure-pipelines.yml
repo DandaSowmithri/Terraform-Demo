@@ -28,7 +28,7 @@ steps:
 
     command: 'init'
 
-    workingDirectory: 'Terraform-Demo'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/DandaSowmithri/Terraform-Demo'
 
     backendServiceArm: 'terraform-spn'
 
@@ -54,7 +54,7 @@ steps:
 
     command: 'apply'
 
-    workingDirectory: 'Terraform-Demo'
+    workingDirectory: '$(System.DefaultWorkingDirectory)/DandaSowmithri/Terraform-Demo'
 
     environmentServiceNameAzureRM: 'terraform-spn'
 
